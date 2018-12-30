@@ -1,0 +1,142 @@
+.dashboard-container {
+  position: relative;
+  padding-top: 25px;
+
+  .dashboard {
+    .overview-container {
+      border-bottom: 1px solid $brand-color-tertiary;
+      padding-bottom: 25px;
+      
+      .overview {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .profile-image-container {
+          $phone-width: 100px;
+          $tablet-width: 240px;
+          $desktop-width: 500px;
+
+          $phone-offset: 30px;
+          $tablet-offset: 72px;
+          $desktop-offset: 150px;
+
+          width: $phone-width - $phone-offset;
+          margin-right:$phone-offset / 2;
+
+          @media screen and (min-width: $medium-break) {
+            width: $tablet-width - $tablet-offset;
+            margin-right: $tablet-offset / 2;
+          }
+
+          @media screen and (min-width: $large-break) {
+            width: $desktop-width - $desktop-offset;
+            margin-right: $tablet-offset / 2;
+          }
+
+          > img {
+            position: relative;
+            left: $phone-offset*-1;
+            width: $phone-width;
+            height: $phone-width;
+            clip-path: inset(0 0 0 $phone-offset);
+
+            border-radius: $phone-width;
+
+            @media screen and (min-width: $medium-break) {
+              left: $tablet-offset*-1;
+              clip-path: inset(0 0 0 $tablet-offset);
+              width: $tablet-width;
+              height:$tablet-width;
+              border-radius: $tablet-width;
+            }
+
+            @media screen and (min-width: $large-break) {
+              left: $desktop-offset*-1;
+              clip-path: inset(0 0 0 $desktop-offset);
+              width: $desktop-width;
+              height: $desktop-width;
+              border-radius: $desktop-width;
+            }
+          }
+        }
+
+
+        .recap-container {
+          display: flex;
+          flex-direction: column;
+
+          > h1 {
+            padding-left: 10px;
+
+            @media screen and (min-width: $medium-break) {
+              padding-left: 15px;
+            }
+
+            @media screen and (min-width: $large-break) {
+              padding-right: 20px;
+            }
+          }
+
+          .recap {
+            display: flex;
+
+            .amount-container,.rank-container {
+              margin-right: 2em;
+              display: flex;
+              flex-direction: column;
+              padding-top: 10px;
+
+              @media screen and (min-width: $medium-break) {
+                padding-top: 15px;
+                margin-right: 7em;
+              }
+
+              @media screen and (min-width: $large-break) {
+                padding-top: 20px;
+                margin-right: 11em;
+              }
+
+              > .pre-text,.post-text {
+                padding-left: 10px;
+
+                @media screen and (min-width: $medium-break) {
+                  padding-left: 15px;
+                }
+
+                @media screen and (min-width: $large-break) {
+                  padding-left: 20px;
+                }
+              }
+
+              .pre-text {
+                margin-bottom: 5px;
+              }
+
+              .post-text {
+                margin-top: 5px;
+              }
+
+              .value {
+                background-color: $brand-color-4ary;
+                text-align: center;
+                font-weight: 600;
+                color: white;
+                padding: 5px;
+                font-size: 14pt;
+
+                @media screen and (min-width: $medium-break) {
+                  font-size: 20pt;
+                }
+
+                @media screen and (min-width: $large-break) {
+                  font-size: 36pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

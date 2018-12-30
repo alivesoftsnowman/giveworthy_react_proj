@@ -1,0 +1,33 @@
+.questionnaire-container {
+  display: flex;
+  justify-content: center;
+}
+
+.backBtn{
+  font-size:20px !important;
+  font-weight:400 !important;
+  margin: 10px auto !important;
+  color:#ADADAD !important;
+  text-transform: initial !important;
+  left:-15% !important;
+  top:0 !important;
+  position:absolute !important;
+}
+.loi-active:after{
+  content:"";
+  height: 15px;
+  width: 15px;
+  background-color: rgb(20, 184, 14);
+  border-radius: 50%;
+  float: right;
+  margin-top: 10px;
+}
+.loi-inactive:after{
+  content:"";
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  float: right;
+  margin-top: 10px;
+}

@@ -1,0 +1,27 @@
+$medium-break: 640px;
+$large-break: 1280px;
+
+$light-gray: #f2f2f2;
+$medium-gray: #BDBDBD;
+$shadow-gray: #a6a6a6;
+$dark-gray: #757575;
+
+$brand-color-primary: #f7f4e7;
+$brand-color-secondary: #00b486;
+$brand-color-tertiary: #b9e982;
+$brand-color-4ary: #393d46;
+$dark-yellow: #dfd7ba;
+$medium-yellow:#efe9d1;
+
+$google-blue: #337bf2;
+
+$brand-font-primary: 'Open Sans', sans-serif;
+$font-google: 'Roboto', sans-serif;
+
+@import './Main';
+@import './Header';
+@import './Dashboard';
+@import './auth/Login';
+@import './Questionnaire';
+@import "~video-react/styles/scss/video-react"; 
+@import '~react-input-range/lib/css/index.css';

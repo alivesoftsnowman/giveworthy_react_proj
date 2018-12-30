@@ -1,0 +1,87 @@
+.login-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  .login-buttons {
+    display: flex;
+    flex-direction: column;
+
+    .login-button {
+      box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.45);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 35px;
+      border-radius: 2px;
+      padding: 0 8px 0 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .login-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        height: 33px;
+        width: 35px;
+      }
+
+      img {
+        height: 23px;
+        border-radius: 2px;
+      }
+
+      &.login-google {
+        font-family: $font-google;
+        border: 1px solid $google-blue;
+        color: white;
+        font-weight: 500;
+        background-color: $google-blue;
+
+        .login-icon {
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+.login-button{
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  cursor: pointer;
+  display: block !important;
+  font-size: 16px !important;
+  text-decoration: none;
+  border-radius: 6px;
+  padding:10px;
+  height: 50px;
+  width: 300px;
+  outline: none;
+  box-shadow: 2px 2px 3px $shadow-gray ;
+  border: 1px !important;
+  margin:20px auto !important;
+  background: white !important;
+}
+.gplus-signin-button{
+  background:rgba(209, 72, 54,0.8) !important;
+  &:hover{
+      background:rgba(209, 72, 54,1) !important;
+  }
+}
+.facebook-signin-button{
+  background-color: #4c69ba !important;
+  &:hover{
+    background-color: #20419e !important;
+  }
+}
+.email-signin-button{
+  background-color: white;
+  text-align: center;
+  &:hover{
+    background-color: $light-gray;
+  }
+}

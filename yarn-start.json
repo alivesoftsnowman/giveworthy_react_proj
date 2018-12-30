@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "GiveWorthy",
+            "script": "yarn",
+            "args" : "start-prod"
+        }
+    ]
+}

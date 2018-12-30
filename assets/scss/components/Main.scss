@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: $brand-font-primary;
+  background-color: $light-gray;
+}
+
+.main-container {
+  font-size: 8pt;
+  // overflow-x: hidden;
+
+  @media screen and (min-width: $medium-break) {
+    font-size: 12pt;
+  }
+
+  @media screen and (min-width: $large-break) {
+    font-size: 16pt;
+    width:$large-break;
+  }
+  
+  // h1 {
+  //   font-size: 12pt;
+  //   margin: 0;
+
+  //   @media screen and (min-width: $medium-break) {
+  //     font-size: 16pt;
+  //   }
+
+  //   @media screen and (min-width: $large-break) {
+  //     font-size: 28pt;
+  //   }
+  // }
+
+  @media screen and (min-width: $large-break) {
+    margin: 0 auto;
+  }
+
+}
+.page-container{
+  margin-top:60px !important;
+  margin-bottom:60px !important;
+}
+.root{
+  flex-grow:1
+}
+.flex{
+  flex:1
+}
+.link-button{
+  text-decoration:none;
+  color:$dark-gray;
+  outline: none;
+
+}
+.sub-header-title{
+  margin-top:60px !important;
+  font-size:48px !important;
+  text-align:center;
+  color:$dark-gray !important;
+  width:"100%";
+  font-weight:400  !important;;
+  @media (max-width: $medium-break) {
+    font-size:36px !important;
+  }
+}
+.sub-header-desc{
+  font-size:24px !important;;
+  text-align:center;
+  color:$medium-gray !important;
+  width:"100%";
+  font-weight:400  !important;;
+}
+.sub-header-plain{
+  font-size:16px !important;
+  color:$dark-gray !important;
+  width:"100%";
+  font-weight:400  !important;;
+}
+.UserAvatar {
+  display: block;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.UserAvatar--inner {
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size:16px;
+  margin:0px auto;
+  cursor: pointer;
+}
+
+.UserAvatar--light {
+  color: gray;
+}
+.UserAvatar--img{
+  display: inline-block !important;
+  vertical-align: middle;
+}
+.UserAvatar--light .UserAvatar--inner {
+  border: 1px solid lightgray;
+}
+
+.file-input-button {
+  display: none;
+}
+
+.helper-text{
+  font-size: 16px !important;
+}
+.MuiDialog-paper-116 {
+  overflow-y: inherit !important;
+}
+.inline-flex{
+  display: inline-flex !important;
+}

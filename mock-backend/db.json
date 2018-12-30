@@ -1,0 +1,16 @@
+{
+  "users": [ 
+    {
+      "id": "449f555d-372a-46b5-9e35-db9c3dbe6f0c",
+      "givenName": "Austin",
+      "familyName": "Benesh",
+      "email": "austin.d.benesh@gmail.com",
+      "gender": "male",
+      "dob": 624499200,
+      "role": 2,
+      "affiliatedOrgs": [],
+      "createdAt": 1527788770,
+      "updatedAt": 1527788770
+    }
+  ]
+}
