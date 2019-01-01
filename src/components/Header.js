@@ -162,7 +162,6 @@ export class Header extends PureComponent {
                 </Link>)}
               {!auth && (
                 <Link to="/login" className='link-button'>
-
                   <Button style={styles.button} onClick={this.changePath} style={this.checkPath("login") ? { ...styles.active, ...styles.anchor } : styles.anchor}>Login </Button>
                 </Link>)}
               {auth && (

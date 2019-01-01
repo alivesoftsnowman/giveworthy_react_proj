@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import { hot } from 'react-hot-loader';
 import { Grid, Typography } from '@material-ui/core';
+
+
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import logo from '@assets/images/giveworthy-footer-logo.png';
 import { SocialIcon } from 'react-social-icons'
 
@@ -16,7 +20,7 @@ const styles = theme => ({
     bottom: 0,
     height: 365,
     width: "100%",
-    
+
   },
   footerContent: {
     padding: "30px 10px",
