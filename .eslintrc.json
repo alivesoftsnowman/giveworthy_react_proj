@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "unicodeCodePointEscapes": true
+    }
+  },
+  "rules": {
+    "semi": "error",
+    "brace-style": "warn",
+    "indent": ["warn", 2],
+    "quotes": ["warn", "single"],
+    "jsx-quotes": ["warn", "prefer-double"]
+  }
+}
